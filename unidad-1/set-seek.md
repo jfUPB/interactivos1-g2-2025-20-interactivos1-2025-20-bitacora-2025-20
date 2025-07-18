@@ -20,6 +20,7 @@ R/ Me oarece muy chevere como una
 ## Actividad 03
 
 En este sistemas físico interactivo identifica los inputs, outputs y el proceso.
+https://python.microbit.org/v/3
 [El enlace a mi programa en la web](https://editor.p5js.org/ghostdragonn/sketches/lxbu33J0Q)
 ## Inputs
 botones 
