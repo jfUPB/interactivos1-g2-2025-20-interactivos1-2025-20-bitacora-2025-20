@@ -15,20 +15,24 @@ R/ Como tal, yo soy una persona muy creativa y artística, mi enfoque profesiona
 R/ El diseño o arte generativo es un proceso creativo donde un artista produce obras mediante un conjunto reglas y cierta autonomía del sistema. No importa cómo se vea, sino que fue generada por un proceso automático. Ademas tiene cierta aleatoriedad lo que hace que el output siempre sea diferente.
 
 ### ¿Cómo podrías aplicar lo que has visto en tu perfil profesional?
-R/ Me oarece muy 
+R/ Siento que seria bastante interesante crear diferentes versiones de 
 
 ## Actividad 03
 
 En este sistemas físico interactivo identifica los inputs, outputs y el proceso.
-https://python.microbit.org/v/3
-[El enlace a mi programa en la web](https://editor.p5js.org/ghostdragonn/sketches/lxbu33J0Q)
+[El enlace a mi programa en python](https://python.microbit.org/v/3)
+[El enlace a mi programa en p5js](https://editor.p5js.org/ghostdragonn/sketches/lxbu33J0Q)
+
 ## Inputs
-botones 
-boton enviar amor
-vibraciones externas
-puerto serial
+-botones 
+-boton enviar amor
+-vibraciones externas
+-puerto serial
+
 ## Outputs
-display
+-display
+-Microbit
+
 ## Proceso
 El programa en java script del editor y el programa en python
 
@@ -40,6 +44,7 @@ El programa en java script del editor y el programa en python
 
 ## Código:
 
+```
 function setup() {
   createCanvas(400, 400);
 }
@@ -297,4 +302,4 @@ function draw() {
   circle(265,115,10)
 
 }
-
+```
