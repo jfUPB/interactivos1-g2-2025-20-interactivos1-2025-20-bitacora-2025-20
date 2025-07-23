@@ -38,3 +38,58 @@ Seria el programa que se encarga de dictamnar los inputs y outputs correspondien
 ### Outputs
 - En pantalla (p5.js): el círculo cambia de color y muestra la letra recibida (A: rojo, B: amarillo, C: verde)
 - En el micro:bit: muestra una mariposa al inicio y un corazón si recibe la letra ‘h’
+
+
+
+# Actividad 4
+
+[LINK ARCHIVO P5.JS](https://editor.p5js.org/MariPrada/sketches/CuHteAIrQ)
+
+```javascript
+function setup() {
+  createCanvas(600, 600);
+  noLoop(); // Solo dibuja una vez
+  rectMode(CENTER);
+  angleMode(DEGREES);
+  background(30);
+  noFill();
+
+  let spacing = 60;
+  let maxRotation = 360;
+
+  for (let x = spacing / 2; x < width; x += spacing) {
+    for (let y = spacing / 2; y < height; y += spacing) {
+      push();
+      translate(x, y);
+      rotate(random(maxRotation));
+      strokeWeight(random(1, 3));
+      stroke(random(100, 255), random(100, 255), random(100, 255), 200);
+
+      // Dibuja un patrón aleatorio en cada celda
+      let shapeType = int(random(3));
+      if (shapeType === 0) {
+        ellipse(0, 0, random(20, 50), random(20, 50));
+      } else if (shapeType === 1) {
+        rect(0, 0, random(20, 50), random(20, 50));
+      } else {
+        beginShape();
+        for (let i = 0; i < 5; i++) {
+          let angle = map(i, 0, 5, 0, 360);
+          let r = random(10, 30);
+          let vx = cos(angle) * r;
+          let vy = sin(angle) * r;
+          vertex(vx, vy);
+        }
+        endShape(CLOSE);
+      }
+      pop();
+    }
+  }
+}
+```
+
+<img width="634" height="644" alt="image" src="https://github.com/user-attachments/assets/6dfbea4a-c2a6-44e1-984b-dc9a3ba00db3" />
+
+
+
+
