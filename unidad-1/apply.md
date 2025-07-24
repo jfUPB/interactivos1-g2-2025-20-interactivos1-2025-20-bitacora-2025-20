@@ -4,7 +4,41 @@
 
 ### ACTIVIDAD 05
 
-Explica cómo funciona el sistema físico interactivo que acabamos de crear.
+#### Explica cómo funciona el sistema físico interactivo que acabamos de crear.
+
+Estamos creando un sistema físico interactivo distribuido. Eso significa que usamos dos dispositivos diferentes (dos “computadoras”, por así decirlo) que se comunican entre sí para lograr algo. En nuestro caso:
+
+Un micro:bit (una mini computadora con botones).
+
+Una computadora normal (donde usamos p5.js para hacer una animación visual).
+
+¿Qué hace cada computadora?
+1. micro:bit (la mini computadora)
+Input:
+Botón A
+Es el botón físico que tú puedes presionar con el dedo.
+
+Output:
+Mensaje por puerto serial
+Si el botón está presionado, el micro:bit envía un mensaje por el cable USB a la otra computadora.
+
+Envía "A" si el botón está presionado.
+
+Envía "N" si no lo está.
+Esto lo hace varias veces por segundo.
+
+2. Computadora con p5.js
+Input:
+Mensajes del micro:bit (por el cable USB)
+La compu recibe las letras "A" o "N" que manda el micro:bit.
+
+Output:
+Un cuadrado de color en pantalla
+La compu dibuja un cuadrado:
+
+Si recibe "A" → lo pone rojo (el botón está presionado).
+
+Si recibe "N" → lo pone verde (el botón no está presionado).
 
 
 ### ACTIVIDAD 06
