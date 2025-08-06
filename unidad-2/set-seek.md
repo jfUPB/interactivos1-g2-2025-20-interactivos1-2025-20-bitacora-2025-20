@@ -151,3 +151,60 @@ Si se presiona el botón A
 
 Si pasa cierto tiempo (1 o 2 segundos dependiendo del estado)
 
+Acciones:
+
+Muestra una imagen: display.show(...)
+
+Cambia el estado
+
+Reinicia el contador de tiempo: start_time = utime.ticks_ms()
+
+VECTORES DE PRUEBA:
+
+Vector de prueba 1: Cambia solo de feliz a sonriente
+Cómo está al inicio: En estado STATE_HAPPY, sin presionar el botón.
+
+Qué pasa: Esperamos 1.5 segundos (1500 milisegundos).
+
+Qué debería pasar:
+
+Se cambia al estado STATE_SMILE
+
+Muestra la carita sonriente
+
+¿Pasó eso? ✅ Sí, funciona correctamente.
+
+Vector de prueba 2: Botón A estando triste
+Cómo está al inicio: En estado STATE_SAD
+
+Qué pasa: Presionamos el botón A.
+
+Qué debería pasar:
+
+Se cambia al estado STATE_SMILE
+
+Muestra la carita sonriente
+
+¿Pasó eso? ✅ Sí, funciona correctamente.
+
+Vector de prueba 3: Botón A estando sonriente
+Cómo está al inicio: En estado STATE_SMILE
+
+Qué pasa: Presionamos el botón A.
+
+Qué debería pasar:
+
+Se cambia al estado STATE_HAPPY
+
+Muestra la carita feliz
+
+¿Pasó eso? ✅ Sí, funciona correctamente.
+
+
+### ACTIVIDAD 04
+
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/e30dfea8-8a32-4e29-846f-160f5460beb2" />
+
+
+
